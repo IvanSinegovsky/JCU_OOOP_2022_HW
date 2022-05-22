@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace c04Indexer01
 {
@@ -28,6 +29,13 @@ namespace c04Indexer01
                 myArray.Contains(40));
             Console.WriteLine("The Value 500 is in my list: {0}",
                 myArray.Contains(500));
+
+
+            Console.WriteLine("Iterating elements of myArray in foreach statement");
+            foreach (object myArrayElement in myArray)
+            {
+                Console.WriteLine(myArrayElement);
+            }
         }
     }
 
@@ -60,7 +68,7 @@ namespace c04Indexer01
 
     }
 
-    public class MyArray : Object, IMyArray
+    public class MyArray : Object, IMyArray, IEnumerable
     {
         int INITIAL_CAPACITY = 10;
         
@@ -147,6 +155,14 @@ namespace c04Indexer01
                 myList[i] = myList[i + 1];
             }
             count--;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            for (int i = 0; i < length; i++)
+            {
+                yield return this.myList[i];
+            }
         }
     }
 }

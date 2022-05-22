@@ -15,7 +15,7 @@ namespace c04Indexer01
     {
         static void Main(string[] args)
         {
-            MyArray myArray = new MyArray();
+            MyArray<object> myArray = new MyArray<object>();
             myArray.Add(10);
             myArray.Add(20);
             myArray.Add(30);
@@ -31,51 +31,51 @@ namespace c04Indexer01
         }
     }
 
-    public interface IMyArray
+    public interface IMyArray<T> where T : class
     {        
         #region Properties
         // number of all elements
         int Count { get; }
         // indexer for direct access to any element (read, write)
-        object this[int index] { get; set; }
+        T this[int index] { get; set; }
 
         #endregion
 
         #region Methods
         // The object to add to the array
-        int Add(object value);
+        int Add(T value);
         // Inserts an item to the array at the specified index.
-        void Insert(int index, object value);
+        void Insert(int index, T value);
         // Removes the first occurrence of a specific object from the array.
-        void Remove(object value);
+        void Remove(T value);
         // Removes the array item at the specified index.
         void RemoveAt(int index);
         // Removes all items from the array.
         void Clear();
         // Determines the index of a specific item in the array.
-        int IndexOf(object value);
+        int IndexOf(T value);
         // Determines whether the array contains a specific value.
-        bool Contains(object value);
+        bool Contains(T value);
         #endregion
 
     }
 
-    public class MyArray : Object, IMyArray
+    public class MyArray<T> : Object, IMyArray<T> where T : class
     {
         int INITIAL_CAPACITY = 10;
         
-        private object[] myList;
+        private T[] myList;
         private int length; // maximum number of elements (space for)
         private int count; // current number of elements (used)
 
         public MyArray()
         {
             length = INITIAL_CAPACITY;
-            myList = new object[length];
+            myList = new T[length];
             count = 0; // no elements yet
         }
 
-        public object this[int index] 
+        public T this[int index] 
         { 
             get => myList[index]; 
             set => myList[index] = value; 
@@ -83,7 +83,7 @@ namespace c04Indexer01
 
         public int Count => count;
 
-        public int Add(object value)
+        public int Add(T value)
         { // TODO: check count > INITIAL_CAPACITY
             myList[count++] = value;
             return count - 1;
@@ -94,13 +94,13 @@ namespace c04Indexer01
             count = 0;
         }
 
-        public bool Contains(object value)
+        public bool Contains(T value)
         {
             return IndexOf(value) > -1;
         }
 
         // return the index of value in myArray
-        public int IndexOf(object value)
+        public int IndexOf(T value)
         {
             int index = 0; // the first element
             bool found = false;
@@ -119,7 +119,7 @@ namespace c04Indexer01
             return retValue;
         }
 
-        public void Insert(int index, object value)
+        public void Insert(int index, T value)
         {
             int i = count - 1;
             while (i >= 0 && i >= index)
@@ -131,7 +131,7 @@ namespace c04Indexer01
             myList[i] = value;
         }
 
-        public void Remove(object value)
+        public void Remove(T value)
         {
             int index = IndexOf(value);
             if (index > -1)
