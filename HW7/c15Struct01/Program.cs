@@ -62,9 +62,9 @@ namespace c15Struct01
             return pointNew;
         }
 
-        public void Distance()
-        { // TODO: HW
-            throw new System.NotImplementedException();
+        public double Distance(Point otherPoint)
+        {
+            return Math.Sqrt((this.x - otherPoint.x) * (this.x - otherPoint.x) + (this.y - otherPoint.y) * (this.y - otherPoint.y));
         }
     }
 
@@ -80,6 +80,9 @@ namespace c15Struct01
             Point point4 = point1.AddPoint(point3);
             Console.WriteLine("point3 = {0}", point3);
             Console.WriteLine("point4 = {0}", point4);
+
+            double distanceP3P4 = point3.Distance(point4);
+            Console.WriteLine("[point3; point4] distance = {0}", distanceP3P4);
         }
     }
 }
