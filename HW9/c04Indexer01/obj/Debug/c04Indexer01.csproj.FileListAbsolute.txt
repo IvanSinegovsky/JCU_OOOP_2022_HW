@@ -1,8 +1,0 @@
-D:\Users10\Пользователь\Desktop\OOOP\c04Indexer01\c04Indexer01\bin\Debug\c04Indexer01.exe.config
-D:\Users10\Пользователь\Desktop\OOOP\c04Indexer01\c04Indexer01\bin\Debug\c04Indexer01.exe
-D:\Users10\Пользователь\Desktop\OOOP\c04Indexer01\c04Indexer01\bin\Debug\c04Indexer01.pdb
-D:\Users10\Пользователь\Desktop\OOOP\c04Indexer01\c04Indexer01\obj\Debug\c04Indexer01.csproj.AssemblyReference.cache
-D:\Users10\Пользователь\Desktop\OOOP\c04Indexer01\c04Indexer01\obj\Debug\c04Indexer01.csproj.SuggestedBindingRedirects.cache
-D:\Users10\Пользователь\Desktop\OOOP\c04Indexer01\c04Indexer01\obj\Debug\c04Indexer01.csproj.CoreCompileInputs.cache
-D:\Users10\Пользователь\Desktop\OOOP\c04Indexer01\c04Indexer01\obj\Debug\c04Indexer01.exe
-D:\Users10\Пользователь\Desktop\OOOP\c04Indexer01\c04Indexer01\obj\Debug\c04Indexer01.pdb

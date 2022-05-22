@@ -1,8 +1,0 @@
-D:\Users10\Пользователь\Desktop\OOOP\c15Struct01\c15Struct01\bin\Debug\c15Struct01.exe.config
-D:\Users10\Пользователь\Desktop\OOOP\c15Struct01\c15Struct01\bin\Debug\c15Struct01.exe
-D:\Users10\Пользователь\Desktop\OOOP\c15Struct01\c15Struct01\bin\Debug\c15Struct01.pdb
-D:\Users10\Пользователь\Desktop\OOOP\c15Struct01\c15Struct01\obj\Debug\c15Struct01.csproj.AssemblyReference.cache
-D:\Users10\Пользователь\Desktop\OOOP\c15Struct01\c15Struct01\obj\Debug\c15Struct01.csproj.SuggestedBindingRedirects.cache
-D:\Users10\Пользователь\Desktop\OOOP\c15Struct01\c15Struct01\obj\Debug\c15Struct01.csproj.CoreCompileInputs.cache
-D:\Users10\Пользователь\Desktop\OOOP\c15Struct01\c15Struct01\obj\Debug\c15Struct01.exe
-D:\Users10\Пользователь\Desktop\OOOP\c15Struct01\c15Struct01\obj\Debug\c15Struct01.pdb
